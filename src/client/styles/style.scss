@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Dancing+Script:wght@700&family=Noto+Sans+JP:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('/src/client/img/plane1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    font-family: 'cairo', sans-serif;
+    font-size: 16px;
+}
+
+#box{
+    position: absolute ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .7);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+#title{
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    color: #ffecb3;
+}
+
+#inputData{
+    padding-left: 10px;
+}
+
+#inputData .items{
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+#inputData .items label{
+    display: block;
+    color: #ffecb3;
+    text-transform: capitalize;
+}
+
+#inputData .items input{
+    background: transparent;
+    border: 1px solid #ffecb3;
+    width: 100%;
+    color: #ffecb3;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+input::-webkit-calendar-picker-indicator {
+    background: url(https://image.flaticon.com/icons/svg/2948/2948265.svg)  97% 50%  no-repeat ;
+    background-size: cover;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #ffecb3;
+}
+
+#save{
+    border: 0;
+    background: rgb(8, 8, 161);
+    border-radius: 5px;
+    width: 100%;
+    padding: 8px; 
+    color: #ffecb3;
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#save:hover{
+    background-color: rgba(8, 8, 161, .5);
+}
+
+#delete{
+    border: 0;
+    background: rgb(202, 0, 0);
+    border-radius: 5px;
+    width: 100%;
+    padding: 8px; 
+    color: #ffecb3;
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#delete:hover{
+    background-color: rgba(202, 0, 0, .5);
+}
+
+.same{
+    color: yellow;
+}
+
+#img{
+   width: 250px;
+   height: 200px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   border-radius: 5px;
+}
+
+.trip-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    color: #ffecb3;
+    margin-top: 20px;
+    border: 1px dashed #ffecb3;
+    border-radius: 5px;
+}
+
+@media (max-width:1153px) {
+    body{
+        background: url('/src/client/img/mob2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        font-family: 'cairo', sans-serif;
+        font-size: 12px;
+    }
+
+    .trip-container{
+        display: block;
+        color: #ffecb3;
+        margin-top: 20px;
+        border: 1px dashed #ffecb3;
+        border-radius: 5px;
+    }
+}
